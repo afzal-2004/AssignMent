@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body>
+
+    <div class="container">
+
+
+        <section>
+            <label for="annualIncome"> Enter gross Annual income </label>
+            <button class="about" onclick="AnnulText()">
+                ?
+
+            </button>
+            <p id="Annual" class="Annual" onclick="AnnulTextHide()"></p>
+
+            <br>
+            <span class="ErrorFlex">
+                <input type=" text" id="grossAnnual" placeholder="Enter Gross Annual income"
+                    onchange="HandelChange(event)">
+                <center class="message">
+                    <p id="Error" class="Error">!</p>
+
+                </center>
+            </span>
+
+        </section>
+
+        <section>
+            <label for="extraincome"> Enter extra income </label>
+            <button class="about " onclick="UserExtraIncome()">?</button>
+
+            <p id="Extra" class="Annual" onclick="ExtraIncomeHide()"></p>
+            <br>
+            <span class="ErrorFlex">
+                <input type="number" id="Extraincome" placeholder="Enter  Extra income from other source">
+                <center class="message">
+                    <p id="ExtraIncomeError" class="Error">!</p>
+                </center>
+
+
+            </span>
+
+        </section>
+
+        <section>
+            <label for="agegroup"> Enter age group </label>
+            <button class="about
+        " onclick="PersonAge()">?</button>
+            <p id="UserAge" class="Annual" onclick="UserAgeHide()"></p>
+
+            <br>
+            <span class="ErrorFlex">
+                <input type="number" id="AgeGroup">
+                <center class="message">
+                    <p id="AgeError" class="Error">!</p>
+
+                </center>
+            </span>
+        </section>
+
+        <section>
+            <label for="agegroup"> Enter Total applicable deduction </label>
+            <button class="about
+        " onclick="ApplicableAmmount()">?</button>
+            <p id="ApplicativeMoney" class="Annual" onclick=" ApplicativeMoneyHide()"></p>
+            <br>
+            <span class="ErrorFlex">
+
+                <input type="number" id="Deduction" placeholder="Add total applicable deduction">
+                <center class="message">
+                    <p id="AplicativeError" class="Error">!</p>
+
+                </center>
+
+            </span>
+
+        </section>
+
+
+        <section>
+            <center>
+                <button onclick="ErrorMessage()" class="btn" id="toggelebtn">Sumbit</button>
+            </center>
+        </section>
+
+    </div>
+
+
+    <center class="overlay" onclick="CloseWindow()">
+        <label for="FinalValue" id="CalculatedTax">
+
+        </label>
+
+    </center>
+
+
+
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
